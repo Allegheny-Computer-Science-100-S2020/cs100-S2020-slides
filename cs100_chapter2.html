@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computer Science 100: Computational Expression</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 100">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet" type="text/css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="https://live.staticflickr.com/2828/32740378883_88ec4d5b72_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 100</h1>
+          <h2>Computational Expression</h2>
+          <p>Gregory M. Kapfhammer</p>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in the Textbook</b></p>
+        </section>
+
+        <section>
+          <h1 id="escape_sequences">Escape Sequences</h1>
+          <p class="fragment">What if we want to output a quotation mark?</p>
+          <p class="fragment">This character has a special meaning in Java</p>
+          <p class="fragment">So, we have to <b class="orange">escape</b> it!</p>
+          <p class="fragment"><b class="blue">Please refer to Figure 2.1 in your textbook</b></p>
+          <p class="fragment"><b class="orange">Escape sequences support formatted output</b></p>
+        </section>
+
+        <section>
+          <h1 id="variables">Variables</h1>
+          <p class="fragment">Types</p>
+          <p class="fragment">Declaration</p>
+          <p class="fragment">Assignment</p>
+          <p class="fragment">Constants</p>
+          <p class="fragment"><b class="green">How should we organize the declarations in our programs?</b></p>
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4124/5068845349_4bb9f8fec9.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4124/5068845349_4bb9f8fec9.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1 id="primitive_data_types">Primitive Types</h1>
+          <p class="fragment">Integers and floating point values</p>
+          <p class="fragment">Bit-depth trade-offs</p>
+          <p class="fragment">Resource-constrained devices</p>
+          <p class="fragment">Byte values and booleans</p>
+          <p class="fragment"><b class="green">What does this look like in memory?</b></p>
+          <br /><small><a href="https://creativecommons.org/licenses/by-sa/2.0/">creative commons licensed ( BY-SA )</a> <a title="binary bridge" href="https://flickr.com/photos/mcclanahoochie/5068845349">flickr photo</a> shared by <a href="https://flickr.com/people/mcclanahoochie">mcclanahoochie</a></small>
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4124/5068845349_4bb9f8fec9.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm5.static.flickr.com/4124/5068845349_4bb9f8fec9.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1 id="reference_data_types">Reference Types</h1>
+          <p class="fragment">ArrayLists and Colors and ...</p>
+          <p class="fragment">Classes and objects</p>
+          <p class="fragment">Containers to store objects</p>
+          <p class="fragment">User-defined and system-provided</p>
+          <p class="fragment"><b class="green">What does this look like in memory?</b></p>
+          <br /><small><a href="https://creativecommons.org/licenses/by-sa/2.0/">creative commons licensed ( BY-SA )</a> <a title="binary bridge" href="https://flickr.com/photos/mcclanahoochie/5068845349">flickr photo</a> shared by <a href="https://flickr.com/people/mcclanahoochie">mcclanahoochie</a></small>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using GitHub and Docker</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Needs correctly configured laptop</b></h1>
+        </section>
+
+        <section>
+          <h1 id="let's_try_it!">Let's Try It!</h1>
+          <h3><b class="red">Write one Java program that declares variables of the following types</b></h3>
+          <p class="fragment"><code>int</code>, <code>double</code>, <code>float</code>, <code>boolean</code>, <code>char</code>, <code>String</code></p>
+          <p class="fragment">Give each of the variables a suitable <b class="orange">default</b> value</p>
+          <p class="fragment">Use a <code>println</code> statement to display all of the values</p>
+          <p class="fragment">Add a single-line comment to the source code</p>
+          <p class="fragment">See the README file for full details about the requirements</p>
+          <p class="fragment">If this does not work, make sure to fix your program!</p>
+        </section>
+
+        <section>
+          <h1><b class="green">What were your experiences?</b></h1>
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm2.static.flickr.com/1228/1023015396_9cfff2939d.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm2.static.flickr.com/1228/1023015396_9cfff2939d.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Expressions</h1>
+          <p class="fragment">Arithmetic operators: <code>+, -, *, /, %</code></p>
+          <p class="fragment"><b class="green">Wait, what does <code>%</code> mean?</b></p>
+          <p class="fragment">Operator <b class="orange">precedence</b></p>
+          <p class="fragment">What about <b class="orange">parentheses</b>?</p>
+          <p class="fragment">Can you draw an <b class="orange">expression tree</b>?</p>
+          <br /><small><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">creative commons licensed ( BY-NC-SA )</a> <a title="Shock" href="https://flickr.com/photos/jannemei/1023015396">flickr photo</a> shared by <a href="https://flickr.com/people/jannemei">jannemei</a></small>
+        </section>
+
+        <section>
+          <h1 id="operators">Operators</h1>
+          <p class="fragment">Let's try to "get some work done"!</p>
+          <p class="fragment">We often want to increase a value by one</p>
+          <p class="fragment">You can write <b class="orange"><code>count = count + 1</code></b> or <b class="orange"><code>count++</code></b></p>
+          <p class="fragment"><b class="green">Which one of these notations do you prefer? Why?</b></p>
+          <p class="fragment">We often want to assign a value to a variable</p>
+          <p class="fragment">You can write <b class="orange"><code>total = total + 5</code></b> or <b class="orange"><code>total += 5</code></b></p>
+          <p class="fragment"><b class="green">Which approach do you like better? Why?</b></p>
+        </section>
+
+        <section>
+          <h1 id="data_conversion">Data Conversion</h1>
+          <p class="fragment"><b class="green">Can we ever transform one data type into another?</b></p>
+          <p class="fragment">We can use <b class="orange">widening</b> and <b class="orange">shortening</b> conversions</p>
+          <p class="fragment">Converting from a <code>byte</code> to a <code>short</code> is safe! <b class="green">Why</b>?</p>
+          <p class="fragment"><b class="blue">See Figure 2.5 for a list of widening conversions</b></p>
+          <p class="fragment">Narrowing conversions can lead to information loss. <b class="green">Why</b>?</p>
+          <p class="fragment"><b class="blue">Refer to Figure 2.6 for the list of narrowing conversions</b></p>
+        </section>
+
+        <section>
+          <h1 id="conversion_techniques">Conversion Techniques</h1>
+          <p class="fragment"><u>Assignment</u> conversion: <b class="orange"><code>money = dollars</code></b> ... </p>
+          <p class="fragment">... when dollars is an <code>int</code> and money is a <code>float</code></p>
+          <p class="fragment"><u>Promotion</u> conversion: <b class="orange"><code>result = sum / count</code></b> ... </p>
+          <p class="fragment">... when sum is a <code>float</code> and count is an <code>int</code></p>
+          <p class="fragment"><u>Casting</u> conversion: <b class="orange"><code>dollars = (int) money</code></b> ... </p>
+          <p class="fragment">... when dollars is an <code>int</code> and money is a <code>float</code></p>
+        </section>
+
+        <section>
+          <h1 id="user_input">User Input</h1>
+          <p class="fragment">Wait, what about when we want user-defined values?</p>
+          <p class="fragment">We can perform <b class="sky">input</b> with the <code>Scanner</code></p>
+          <p class="fragment">Check this out ... </p>
+          <p class="fragment">... <code>Scanner scan = new Scanner(System.in)</code></p>
+          <p class="fragment">What is the purpose of this line of code?</p>
+          <p class="fragment">Review the <code>Scanner</code> methods listed in Figure 2.7</p>
+        </section>
+
+        <section>
+          <h1>Let's Try It!</h1>
+          <p class="fragment"><b class="orange">Refresh your in-class GitHub repository</b></p>
+          <p class="fragment">git remote add download git@github.com:Allegheny-Computer-Science-100-F2019/cs100-F2019-inclass-starter.git</p>
+          <p class="fragment">git pull download master</p>
+          <p class="fragment"><b class="green">What is the output of this program?</b></p>
+          <p class="fragment"><b class="green">How does this program use the Scanner class?</b></p>
+          <p class="fragment"><b class="red">Use comments to explain how <code>ComputeGasMileage.java</code> works</b></p>
+        </section>
+
+        <!-- NOTE: The slides about computer graphics have now moved to the next chapter after textbook update -->
+
+        <section>
+          <h1><b class="green">Any questions about this example?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Work to achieve learning objectives</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Schedule meeting during office hours</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Hands-on practice throughout the semester!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Schedule office hours if you have questions!</b></h1>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+
+</html>
